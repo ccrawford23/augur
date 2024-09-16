@@ -5,8 +5,6 @@ Welcome!
 ~~~~~~~~
 ~~~~~~~~
 
-Augur's documentation; (pronounced awe-grrr), is split into seven (7) parts. If you’re new to the project you can find out more on the software `here <https://github.com/chaoss/augur#readme>`_. We recommend giving it a once-over as a gentle introduction, otherwise, feel free to hop right into the docs!
-
 .. toctree::
    :maxdepth: 2
 
@@ -17,6 +15,7 @@ Augur's documentation; (pronounced awe-grrr), is split into seven (7) parts. If 
    rest-api/api
    docker/toc
    schema/toc
+   login
 .. 
   library-documentation/toc
 .. 
@@ -47,13 +46,18 @@ If you want to see augur in action, you can view CHAOSS’s augur instance `here
 Current maintainers
 --------------------
 - `Derek Howard <https://github.com/howderek>`_
-- `Sean P. Goggins <http://www.seangoggins.net>`_
-- `Matt Snell <https://github.com/Nebrethar>`_
 - `Andrew Brain <https://github.com/ABrain7710>`_
+- `Isaac Milarsky <https://github.com/IsaacMilarky>`_
+- `John McGinnes <https://github.com/Ulincys>`_ 
+- `Sean P. Goggins <https://github.com/sgoggins>`_ 
+
 
 
 Former maintainers
 --------------------
+- `Carter Landis <https://github.com/ccarterlandis>`_
+- `Gabe Heim <https://github.com/gabe-heim>`_
+- `Matt Snell <https://github.com/Nebrethar>`_
 - `Christian Cmehil-Warn <https://github.com/christiancme>`_
 - `Jonah Zukosky <https://github.com/jonahz5222>`_
 - `Carolyn Perniciaro <https://github.com/CMPerniciaro>`_
@@ -66,6 +70,23 @@ Contributors
 - `Dawn Foster <https://github.com/geekygirldawn/>`_
 - `Ivana Atanasova <https://github.com/ivanayov/>`_
 - `Georg J.P. Link <https://github.com/GeorgLink/>`_
+
+GSoC 2022 participants
+-----------------------
+- `Kaxada <https://github.com/kaxada>`_
+- `Mabel F <https://github.com/mabelbot>`_
+- `Priya Srivastava <https://github.com/Priya730>`_
+- `Ramya Kappagantu <https://github.com/RamyaKappagantu>`_
+- `Yash Prakash <https://gist.github.com/yash-yp>`_
+
+GSoC 2021 participants
+-----------------------
+- `Dhruv Sachdev <https://github.com/Dhruv-Sachdev1313>`_
+- `Rashmi K A <https://github.com/Rashmi-K-A>`_
+- `Yash Prakash <https://github.com/yash2002109/>`_
+- `Anuj Lamoria <https://github.com/anujlamoria/>`_
+- `Yeming Gu <https://github.com/gymgym1212/>`_
+- `Ritik Malik <https://gist.github.com/ritik-malik>`_
 
 GSoC 2020 participants
 -----------------------

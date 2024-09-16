@@ -1,15 +1,15 @@
-#SPDX-License-Identifier: MIT
-# Config
 *.config.json
 !*.docker.config.json
 env.txt
 docker_env.txt
 pyenv.txt
 augur_export_env.sh
-.DS_Store
+*DS_Store
 *.config.json
 !docker.config.json
-
+config.yml
+reports.yml
+*.pid
 
 node_modules/
 .idea/
@@ -17,12 +17,16 @@ logs/
 __pycache__/
 *$py.class
 *.pyc
+*.rdb
+yarn.lock
+Augur_Muskellunge.egg-info/
 runtime/
 logs/
 cache/
 frontend/public/api_docs/
 *.err
 .tox
+*.db
 
 # C extensions
 *.so
@@ -188,4 +192,8 @@ pgdata/
 postgres-data/
 
 # Generated files from github
-.history/
+.history/sendgrid.env
+sendgrid.env
+*sendgrid*.env
+./sendgrid.env
+sendgrid.env

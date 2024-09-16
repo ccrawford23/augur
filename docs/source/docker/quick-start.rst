@@ -26,11 +26,24 @@ Before you get off to such a quick start, go ahead and
     CREATE DATABASE augur;
     CREATE USER augur WITH ENCRYPTED PASSWORD 'password';
     GRANT ALL PRIVILEGES ON DATABASE augur TO augur;
+  
 
-  2. Install Docker. If you're not familiar with Docker, their `starting guide <https://www.docker.com/resources/what-container>`_ is a great resource.
-  3. Execute the following script from the base directory of the Augur repository:
+  2. Install Docker and docker-compose. If you're not familiar with Docker, their `starting guide <https://www.docker.com/resources/what-container>`_ is a great resource.
+
+  3. Create a file to store all relevant enviroment variables for running docker. Below is an example file. This file should be named ``.env```
+
+  .. code-block:: 
+
+    AUGUR_GITHUB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxx 
+    AUGUR_GITHUB_USERNAME=usernameGithub
+    AUGUR_GITLAB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxx
+    AUGUR_GITLAB_USERNAME=usernameGitlab
+    AUGUR_DB=yourDBString
+
+  4. Execute the code from the base directory of the Augur repository:
 
   .. code-block:: bash
 
-    sudo ./docker-setup.sh
+    sudo docker build -t augur-docker -f docker/backend/Dockerfile .
+    sudo docker compose up
 

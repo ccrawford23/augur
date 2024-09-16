@@ -3,15 +3,23 @@ on:
   push:
     branches:
       - main
+      - dev
   pull_request:
     branches:
       - main
+      - dev
   release:
     types:
       - published
 
+permissions: {}
+
 jobs:
   build:
+    permissions:
+      contents: read #  to fetch code (actions/checkout)
+      packages: write #  to push docker image
+
     name: Build image
     runs-on: ubuntu-latest
     steps:
@@ -25,7 +33,7 @@ jobs:
 
           echo $PASSWORD | docker login $REGISTRY -u $LOGIN --password-stdin
 
-          for i in util/docker/* ; do
+          for i in docker/* ; do
               CONTAINER=$(basename $i)
               echo "Building $CONTAINER"
               export IMAGE=$LOGIN/augur_$CONTAINER
